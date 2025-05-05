@@ -1,0 +1,133 @@
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 13vh;
+
+
+}
+
+
+
+
+
+.navbar li img {
+  height: 17px;
+  width: 65px;
+}
+
+.logo {
+  font-size: 35px;
+  position: relative;
+}
+
+.logo img {
+  width: 124px;
+  top: -4px;
+  right: -29px;
+  position: absolute;
+  z-index: -1;
+}
+
+.openMenu {
+  display: none;
+}
+
+.closeMenu{
+  display: none;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  gap: 30px;
+}
+
+.anchor {
+  color: white;
+  text-decoration: none;
+  list-style: none;
+}
+
+ul li {
+  list-style: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.navbarBtn {
+  padding: 15px 20px;
+  background: linear-gradient(270deg, #034357 10%, #149ffc 100%);
+  border-radius: 50px;
+  color: white;
+  border: 0;
+  font-size: 17px;
+  cursor: pointer;
+  font-weight: 400;
+}
+
+@media (max-width:768px) {
+
+.anchor .navbarBtn{
+  display: none;
+ } 
+
+ul{
+  flex-direction: column;
+  height: 100vh;
+  background-color: #092346;
+  top: 0;
+  position: fixed;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 30px 20px;
+  z-index: 4;
+  width: 250px;
+  gap: 50px;
+  right: -400px;
+  transition: right 0.3s ease-in;
+} 
+.closeMenu{
+  display: flex;
+position: absolute;
+ height: 25px;
+ top: 25px;
+right: 20px;
+
+ 
+} 
+.openMenu{
+  display: flex;
+
+  height: 23px;
+  
+}
+ul li{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  font-size: 25px;
+}
+.navbar{
+    display: grid;
+    grid-template-columns: 1fr auto; /* Two columns: logo | menu */
+    align-items: center;
+    height: 13vh;
+    padding: 0 20px; /* Add padding for better spacing */
+
+  
+}
+.logo img {
+  width: 124px;
+  top: -4px;
+  
+  right: 242px;
+  position: absolute;
+  z-index: -1;
+}
+
+
+
+}

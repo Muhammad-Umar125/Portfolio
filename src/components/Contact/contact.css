@@ -1,0 +1,226 @@
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px 0px;
+}
+.contactTitle{
+    margin: 70px 0px;
+    position: relative;
+}
+.contactTitle h1{
+ font-size: 70px;
+}
+.contactTitle img{
+    position: absolute;
+    width: 380px;
+    left: 10px;
+    z-index: -1;
+    top:-20px;
+}
+.contactMain{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    
+}
+.left{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.left h1{
+    font-size: 70px;
+    margin: 20px 0px;
+    background: linear-gradient(270deg, #034357 10%, #149ffc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.left p{
+    font-size: 20px;
+    margin: 10px 0px;
+    line-height: 32px;
+}
+
+
+.contactInfo{
+display: flex;
+align-items: flex-start;
+flex-direction: column;
+gap: 12px;
+margin: 12px 0px;
+}
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+.info a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+.info img{
+   height: 35px;
+   width: 35px;
+   
+}
+
+.right{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.right label{
+font-size: 22px;
+font-weight: 400;
+}
+.right input{
+background-color: #32323C;
+color: #A0A0A0;
+width: 600px;
+padding-left: 20px;
+height: 70px;
+font-size: 22px;
+border-radius: 4px;
+outline: none;
+font-family: Outfit;
+border: 0;
+}
+.right  input:focus{
+border: 2px solid gray;
+}
+.right textarea{
+background-color: #32323C;
+color: #A0A0A0;
+width: 600px;
+padding: 12px 0px;
+font-family: Outfit;
+padding-left: 10px;
+height: 200px;
+font-size: 20px;
+border-radius: 4px;
+outline: none;
+border: 0;
+}
+.right textarea:focus{
+    border: 2px solid gray;
+}
+.right button{
+    padding: 15px 20px ;
+    font-size: 24px;
+    border: 0;
+    cursor: pointer;
+    width: 200px;
+    color: white;
+    font-weight:500;
+    border-radius: 40px;
+    background: linear-gradient(270deg, #034357 10%, #149ffc 100%);
+    transition: 0.3s;
+}
+.right button:hover{
+  transform: scale(1.05);
+    transition: 0.3s;
+}
+
+
+@media (max-width:768px) {
+    .contactTitle{
+        margin: 40px 0px;
+    }
+    .contactTitle h1{
+        font-size: 50px;
+        
+       }
+       .contactTitle img{
+           position: absolute;
+           width: 240px;
+           left: 10px;
+           z-index: -1;
+           top:-10px;
+       }
+       .contactMain{
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+        justify-content: center;
+       }
+       .left{
+        width: 90%;
+       }
+
+       .left h1{
+        font-size: 45px;
+        margin: 20px 0px;
+      
+    }
+    .left p{
+        font-size: 20px;
+        margin: 10px 0px;
+        line-height: 32px;
+    }
+    
+    .contactInfo{
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 12px;
+        margin: 12px 0px;
+        }
+.right label{
+    font-size: 20px;
+}
+        .right input{
+            background-color: #32323C;
+            color: #A0A0A0;
+            width: 290px;
+            padding-left: 20px;
+            height: 60px;
+            font-size: 20px;
+            border-radius: 4px;
+            outline: none;
+            font-family: Outfit;
+            border: 0;
+            }
+            .right  input:focus{
+            border: 2px solid gray;
+            }
+            .right textarea{
+            background-color: #32323C;
+            color: #A0A0A0;
+            width: 290px;
+            padding: 12px 0px;
+            font-family: Outfit;
+            padding-left: 10px;
+            height: 200px;
+            font-size: 20px;
+            border-radius: 4px;
+            outline: none;
+            border: 0;
+            }
+ 
+            .right button{
+                padding: 10px 15px ;
+                font-size: 24px;
+                border: 0;
+                cursor: pointer;
+                width: 150px;
+                color: white;
+                font-weight:500;
+                border-radius: 40px;
+                background: linear-gradient(264deg, #DF8908 -5.09%, #B415FF 100%);
+                transition: 0.3s;
+                margin-top: 8px;
+            }
+
+}
